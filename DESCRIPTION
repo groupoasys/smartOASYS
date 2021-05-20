@@ -1,12 +1,18 @@
 Package: smartOASYS
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Smart Meters Optimization and Analytics for Sustainable Energy Systems
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Authors@R: person(given = "Antonio",
+           family = "Elias",
+           role = c("aut", "cre", "cph"),
+           email = "antonioefz91@gmail.com", 
+           comment = c(ORCID = "0000-0002-3078-549X"))
+Maintainer: The package maintainer <antonioefz91@gmail.com>
+Description: Methogolodies and tools for smart meters data accomodated as high dimensional functional time series. 
+Each observation unit is one meters' functional time series where each function is one day. 
+License: GPL-3
+URL: https://github.com/aefdz/smartOASYS
+BugReports: https://github.com/aefdz/issues
 Encoding: UTF-8
 LazyData: true
 Imports:
