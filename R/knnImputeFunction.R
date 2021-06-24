@@ -3,7 +3,7 @@
 #' It uses similar meters of the same meter to impute the missing daily function
 #´
 #' @param data 3dimensional array
-#' @param k number of neighbourds. Default is 1.
+#' @param k number of neighbors. Default is 1.
 #'
 #' @return 3dimensional array with imputed values
 #' @export
