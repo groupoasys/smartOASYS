@@ -22,8 +22,7 @@ This package implements methodologies for smart meters data.
 
 ```{r, message = FALSE}
 #install the package
-#devtools::install_github("aefdz/smartOASYS")
-devtools::load_all()
+devtools::install_github("aefdz/smartOASYS")
 ```
 
 ```{r}
@@ -32,7 +31,7 @@ library(smartOASYS)
 ```
 
 ## Test usage
-Load the example data and plot it.
+Load the example data and plot one day for the 22 inverters.
 
 ```{r}
 data("solarPlant1")
