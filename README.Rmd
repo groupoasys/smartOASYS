@@ -37,7 +37,7 @@ Load the example data and plot it.
 ```{r}
 data("solarPlant1")
 
-par(mfrow = c(1,3))
+par(mfrow = c(3,1))
 
 matplot(solarPlant1$raw0[,1,], type = "l", main = "Raw")
 matplot(solarPlant1$smooth0[,1,], type = "l", main = "Zero derivative smooth")
