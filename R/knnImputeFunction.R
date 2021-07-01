@@ -1,7 +1,7 @@
 #' K-nearest neighbors imputation
 #'
 #' It uses similar meters of the same meter to impute the missing daily function
-#´
+#'
 #' @param data 3dimensional array
 #' @param k number of neighbors. Default is 1.
 #'
