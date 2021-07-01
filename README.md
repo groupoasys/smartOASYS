@@ -24,14 +24,23 @@ Load the example data and plot it.
 ``` r
 data("solarPlant1")
 
-par(mfrow = c(3,1))
 
 matplot(solarPlant1$raw0[,1,], type = "l", main = "Raw")
-matplot(solarPlant1$smooth0[,1,], type = "l", main = "Zero derivative smooth")
-matplot(solarPlant1$smooth1[,1,], type = "l", main = "First derivative smooth")
 ```
 
 ![](README_files/figure-markdown_github/unnamed-chunk-3-1.png)
+
+``` r
+matplot(solarPlant1$smooth0[,1,], type = "l", main = "Zero derivative smooth")
+```
+
+![](README_files/figure-markdown_github/unnamed-chunk-3-2.png)
+
+``` r
+matplot(solarPlant1$smooth1[,1,], type = "l", main = "First derivative smooth")
+```
+
+![](README_files/figure-markdown_github/unnamed-chunk-3-3.png)
 
 ## References
 
