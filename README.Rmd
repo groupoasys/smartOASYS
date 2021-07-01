@@ -20,7 +20,7 @@ This package implements methodologies for smart meters data.
 
 ## Installation 
 
-```{r, message = FALSE}
+```{r, eval = FALSE}
 #install the package
 devtools::install_github("aefdz/smartOASYS")
 ```
