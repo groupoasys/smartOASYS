@@ -45,4 +45,4 @@ matplot(solarPlant1$smooth1[,1,], type = "l", main = "First derivative smooth")
 
 Elías, A., Morales. J. M. and Pineda, S. (2021). Depth-based Outlier
 Detection for Grouped SmartMeters: a Functional Data Analysis Toolbox.
-\[link\]<link>.
+\[https://arxiv.org/abs/2107.01144\]<https://arxiv.org/abs/2107.01144>.
