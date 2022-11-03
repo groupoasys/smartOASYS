@@ -81,5 +81,5 @@ matplot(timeSeriesDepth_mat[,outliers$out_trimmed_mean_MC], type = "l", add = TR
 
 ## References
 
-Elías, A., Morales. J. M. and Pineda, S. (2022). A high dimensional functional time series approach to evolution outlier detection for grouped smart meters. Quality Engineering [link to journal]<https://www.tandfonline.com/doi/full/10.1080/08982112.2022.2135009>.
+Elías, A., Morales. J. M. and Pineda, S. (2022). A high dimensional functional time series approach to evolution outlier detection for grouped smart meters. [Quality Engineering](https://www.tandfonline.com/doi/full/10.1080/08982112.2022.2135009).
 
