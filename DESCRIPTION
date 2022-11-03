@@ -17,7 +17,9 @@ LazyData: true
 Imports:
   fda,
   fdaPOIFD,
-  fdaoutlier
-RoxygenNote: 7.1.1
+  fdaoutlier,
+  matrixStats,
+  mrfDepth
+RoxygenNote: 7.2.1
 Depends: 
     R (>= 2.10)

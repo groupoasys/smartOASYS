@@ -15,6 +15,3 @@ a list containing two matrices with the smooth functions and the first derivativ
 \description{
 Positive smoothing with Bsplines
 }
-\examples{
-
-}

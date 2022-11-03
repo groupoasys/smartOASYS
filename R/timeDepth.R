@@ -4,7 +4,6 @@
 #'
 #' @param dataMatrix matrix with days by columns and time of the day by row or 3dimensional array with 3dim as smart meter indicator
 #' @param typeDepth depth measure to compute
-#' @param phi Default is uniform.
 #'
 #' @return
 #'
@@ -15,19 +14,18 @@
 #' @export
 #'
 #'
-timeDepth <- function(dataMatrix, typeDepth, phi){
+timeDepth <- function(dataMatrix, typeDepth){
   if(length(dim(dataMatrix)) == 2){
-    output <- timeDepthOne(dataMatrix, typeDepth, phi)
+    output <- timeDepthOne(dataMatrix, typeDepth)
   }
 
   if(length(dim(dataMatrix)) == 3){
-    output <- timeDepthHD(dataMatrix, typeDepth, phi)
+    output <- timeDepthHD(dataMatrix, typeDepth)
   }
   return(output)
 }
 
-timeDepthOne <- function(dataMatrix, typeDepth, phi){
-  if(missing(phi)){
+timeDepthOne <- function(dataMatrix, typeDepth){
     if(typeDepth == "FMD"){
       depth <- fdaPOIFD::POIFD(dataMatrix, type = "FMD")
     }
@@ -51,10 +49,6 @@ timeDepthOne <- function(dataMatrix, typeDepth, phi){
     }
 
     mhrd <- fdaPOIFD::POIFD(dataMatrix, type = "MHRD")
-  }else{
-    depth <- fdaPOIFD::POIFD(dataMatrix, type = typeDepth, phi)
-    mhrd <- fdaPOIFD::POIFD(dataMatrix, type = "MHRD", phi)
-  }
 
   dates <- colnames(dataMatrix)
   depth_time <- depth[dates]
@@ -68,6 +62,6 @@ timeDepthOne <- function(dataMatrix, typeDepth, phi){
               mhipo = hipos))
 }
 
-timeDepthHD <- function(dataMatrix, typeDepth, phi){
-  sapply(1:dim(dataMatrix)[1], function(x) timeDepth(dataMatrix[x,,], typeDepth, phi))
+timeDepthHD <- function(dataMatrix, typeDepth){
+  sapply(1:dim(dataMatrix)[1], function(x) timeDepth(dataMatrix[x,,], typeDepth))
 }

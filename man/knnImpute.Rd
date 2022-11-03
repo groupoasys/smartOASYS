@@ -15,8 +15,5 @@ knnImpute(dataMatrix, k = 1)
 matrix with imputed values
 }
 \description{
-K-nearest neighbors imputation
-}
-\examples{
-
+It uses similar days of the same meter to impute the missing data of a partially observe daily function
 }
